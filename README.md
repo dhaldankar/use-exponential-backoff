@@ -43,7 +43,28 @@ const MyComponent = () => {
 ```
 
 ## API
-[Add your API documentation here]
+### Configuration Options
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `initialDelay` | number | 1000 | Initial delay in milliseconds |
+| `maxDelay` | number | 30000 | Maximum delay cap in milliseconds |
+| `multiplier` | number | 2 | Multiplier for delay growth |
+| `maxRetries` | number | 5 | Maximum number of retry attempts |
+| `jitter` | number | 0.1 | Random jitter factor (0-1) |
+
+### Return Values
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `executeWithBackoff` | function | Execute operation with retry logic |
+| `isRetrying` | boolean | Whether currently retrying |
+| `retryCount` | number | Current retry attempt number |
+| `lastError` | Error \| null | Most recent error encountered |
+| `cancel` | function | Cancel ongoing retry operation |
+| `reset` | function | Reset hook state |
+| `getNextDelay` | function | Get next retry delay |
+| `config` | object | Current configuration (read-only) |
 
 ## License
 MIT
