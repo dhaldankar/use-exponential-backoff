@@ -1,0 +1,62 @@
+{
+  "name": "use-exponential-backoff",
+  "version": "1.0.0",
+  "description": "A React hook for handling retries with exponential backoff strategy",
+  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "exponential-backoff",
+    "retry",
+    "api",
+    "error-handling",
+    "typescript"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/use-exponential-backoff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/use-exponential-backoff/issues"
+  },
+  "homepage": "https://github.com/yourusername/use-exponential-backoff#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.23",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^16.3.0",
+    "jest": "^29.7.0",
+    "react": "^19.1.0",
+    "rollup": "^3.29.5",
+    "rollup-plugin-dts": "^6.2.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0"
+  }
+}
